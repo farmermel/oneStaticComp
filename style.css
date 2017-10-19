@@ -23,10 +23,20 @@ article {
   width: 33%;
 }
 
+button {
+  border-style: none;
+  border: solid 2px #FFFFFF;
+  color: #FFFFFF;
+  background-color: #7D8E7F;
+}
+
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.3rem;
 /*  margin: 0px;*/
 /*  flex-wrap: wrap;*/
 }
@@ -50,7 +60,7 @@ article {
 }
 
 .activities {
-  background-color: #E5E6EB;
+  background-color: #C6C6CD;
 }
 
 .amenities,
