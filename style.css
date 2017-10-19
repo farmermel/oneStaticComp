@@ -1,0 +1,99 @@
+body {
+  margin: 15px;
+  background: #DFE0E4;
+}
+
+main {
+  display: flex;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-content: flex-start;
+  width: 59.5%;
+  max-height: ;
+  flex-wrap: wrap;
+}
+
+article {
+/*  display: flex;*/
+  height: 33vh;
+  width: 33%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+/*  margin: 0px;*/
+/*  flex-wrap: wrap;*/
+}
+
+.site-description {
+  width: 66%;
+}
+
+.site-description,
+.friends {
+  background-color: #7D8E7F;
+}
+
+.lodging {
+  background-color: #967A75;
+}
+
+.food,
+.our-staff {
+  background-color: #F75B7F;
+}
+
+.activities {
+  background-color: #E5E6EB;
+}
+
+.amenities,
+.blog {
+  background-color: #FFD9DA;
+}
+
+.nav-icon {
+  width: 36%;
+  height: 40%;
+  align-self: center;
+}
+
+.pseudo-gallery {
+  align-content: flex-end;
+  width: 750px;
+  height: auto;
+}
+
+.soulful-cow-image {
+  width: 100%;
+  margin: 0px;
+}
+
+@media screen and (max-width: 900px){
+  .pseudo-gallery {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
+
+/*@media screen and (max-width: 760px) {
+  .pseudo-gallery {
+    max-height: 600px;
+  }
+}*/
+
+
+
+
