@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 15px;
+  margin: 0px;
   background: #DFE0E4;
   font-family: "Karla", sans serif;
 }
@@ -7,6 +11,23 @@ body {
 main {
   display: flex;
   margin: 0;
+}
+
+h1 {
+  letter-spacing: .13em;
+  font-size: 2em;
+  margin: 0px;
+}
+
+p {
+  letter-spacing: .05em;
+  margin: 5px;
+}
+
+h1 + p {
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 7% 1% 3%;
 }
 
 nav {
@@ -17,32 +38,37 @@ nav {
   flex-wrap: wrap;
 }
 
-article {
-/*  display: flex;*/
-  height: 33vh;
-  width: 33%;
-}
-
 button {
   border-style: none;
   border: solid 2px #FFFFFF;
+  margin: 2.5%;
+  width: 40%;
+  height: 3em;
   color: #FFFFFF;
   background-color: #7D8E7F;
 }
 
+span {
+  width: 100%;
+}
+
 .box {
+  height: 33vh;
+  width: 33.3333333%;
+  /*min-width: 200px;*/
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-weight: 700;
   color: #FFFFFF;
   font-size: 1.3rem;
-/*  margin: 0px;*/
-/*  flex-wrap: wrap;*/
 }
 
 .site-description {
-  width: 66%;
+  width: 66.6666666%;
+  justify-content: left;
+  padding: 5% 4%;
 }
 
 .site-description,
@@ -56,7 +82,7 @@ button {
 
 .food,
 .our-staff {
-  background-color: #F75B7F;
+  background-color: #E0728C;
 }
 
 .activities {
@@ -65,46 +91,99 @@ button {
 
 .amenities,
 .blog {
-  background-color: #FFD9DA;
+  background-color: #C6A9AA;
 }
 
 .nav-icon {
   width: 36%;
-  height: 40%;
+  /*height: 40%;*/
   align-self: center;
+}
+
+.small-icon {
+  width: 10%;
+  margin: 0% 2% 0% 0%;
 }
 
 .pseudo-gallery {
   align-content: flex-end;
   width: 750px;
   height: auto;
+  background-image: url("images/cow-776730_1280.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.soulful-cow-image {
+/*.soulful-cow-image {
   width: 100%;
   margin: 0px;
-}
+}*/
 
-@media screen and (max-width: 900px){
-  .pseudo-gallery {
+@media screen and (max-width: 1160px){
+  /*.pseudo-gallery {
     width: 100%;
+  }*/
+
+ /* main {
+    flex-direction: column-reverse;
+  }*/
+/*stop colors from sitting on top of each other*/
+  .site-description,
+  .lodging,
+  .food,
+  .activities {
+    order: -2;
   }
 
-  main {
-    flex-direction: column-reverse;
+  .amenities {
+    order: -1;
   }
 
   nav {
     width: 100%;
   }
+
+  .site-description {
+    width: 100%;
+  }
+
+  .box {
+    width: 50%;
+  }
 }
 
-/*@media screen and (max-width: 760px) {
-  .pseudo-gallery {
-    max-height: 600px;
+@media screen and (max-width: 850px){
+  main {
+    flex-direction: column-reverse;
   }
-}*/
 
+  nav {
+    align-content: flex-end;
+  }
+
+  .pseudo-gallery {
+    background-image: url("images/horizontalCow.jpg");
+    height: 370px;
+    background-size: cover;
+    width: 100%;
+    /*background-size:;*/
+  }
+
+
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    height: 2em;
+  }
+
+  .site-description {
+    padding: 3% 4%;
+  }
+}
 
 
 
