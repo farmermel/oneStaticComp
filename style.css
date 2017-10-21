@@ -101,12 +101,25 @@ span {
 }
 
 .small-icon {
-  width: 10%;
+  width: 12%;
   margin: 0% 2% 0% 0%;
 }
 
+.arrow-icon {
+  width: 4em;
+  height: 4em;
+  align-self: center;
+
+}
+
+.arrow-holder {
+  justify-content: space-between;
+}
+
 .pseudo-gallery {
-  align-content: flex-end;
+  display: flex;
+  justify-content: space-between;
+  /*align-content: flex-end;*/
   width: 750px;
   height: auto;
   background-image: url("images/cow-776730_1280.jpg");
@@ -150,6 +163,11 @@ span {
   .box {
     width: 50%;
   }
+
+  .small-icon {
+  width: 15%;
+  margin: 0% 1% 0% 0%;
+}
 }
 
 @media screen and (max-width: 850px){
@@ -169,6 +187,11 @@ span {
     /*background-size:;*/
   }
 
+  .small-icon {
+  width: 13%;
+  margin: 0% 1% 0% 0%;
+}
+
 
 
 @media screen and (max-width: 420px) {
@@ -178,6 +201,8 @@ span {
 
   button {
     height: 2em;
+    margin: 2.5% 1.5% 4.5% 0.5%;
+    width: 47%;
   }
 
   .site-description {
