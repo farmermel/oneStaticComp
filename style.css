@@ -36,6 +36,11 @@ nav {
   flex-wrap: wrap;
 }
 
+.menu-circles {
+  display: flex;
+  justify-content: flex-end;
+}
+
 button {
   border-style: none;
   border: solid 2px #FFFFFF;
@@ -45,13 +50,30 @@ button {
   color: #FFFFFF;
   background-color: #7D8E7F;
   font-size: 0.9em;
-
 }
 
 form {
   width: 100%;
   display: flex;
   justify-content: left;
+}
+
+.circle-one,
+.circle-two,
+.circle-three {
+  height: 13px;
+  width: 13px;
+  margin: 9px 3px 3px 3px;
+  border-radius: 100%;
+  background-color: gray;
+}
+
+div.circle-one {
+  background-color: white;
+}
+
+.circle-three {
+  margin: 9px 9px 3px 3px;
 }
 
 .box {
@@ -69,7 +91,8 @@ form {
 .site-description {
   width: 66.6666666%;
   display: flex;
-  justify-content: left;
+  align-items: flex-start;
+
   padding: 3% 4%;
 }
 
@@ -107,20 +130,31 @@ form {
   margin: 0% 2% 0% 0%;
 }
 
-.arrow-icon {
+.left-arrow-icon {
   width: 4em;
   height: 4em;
-  align-self: center;
+  /*align-self: center;*/
+  /*justify-content: flex-start;*/
+}
 
+.right-arrow-icon {
+  width: 4em;
+  height: 4em;
+  /*align-self: center;*/
+  /*justify-content: flex-end;*/
 }
 
 .arrow-holder {
   justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  height: 90%;
 }
 
 .pseudo-gallery {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
   width: 750px;
   height: auto;
   background-image: url("images/cow-776730_1280.jpg");
