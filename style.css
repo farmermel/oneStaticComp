@@ -33,7 +33,7 @@ h1 + p {
 nav {
   display: flex;
   align-content: flex-start;
-  width: 59.5%;
+  width: 69.5%;
   max-height: ;
   flex-wrap: wrap;
 }
@@ -66,8 +66,9 @@ span {
 }
 
 .site-description {
+  display: flex;
   width: 66.6666666%;
-  justify-content: left;
+  align-items: flex-start;
   padding: 5% 4%;
 }
 
